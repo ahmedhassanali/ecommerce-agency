@@ -1,7 +1,7 @@
 <section  class="pt-5 mt-5" id="whychooseUs">
 
     <div  data-aos="fade-up" class=" p-5 ms-sm-0 ms-lg-5 me-0 shadow rounded d-flex flex-row-reverse" style="height: 660px;background-color: #070707;">
-        <img class="img-fluid w-50 w-sm-100 " src="{{asset('images/hero.svg')}}" alt="">
+        <img class="img-fluid w-50 w-sm-100 d-none d-lg-block" src="{{asset('images/hero.svg')}}" alt="">
         <div>
         <div class="text-white my-5">
             <h3>You are looking for a partner for long-term relationship.</h3>

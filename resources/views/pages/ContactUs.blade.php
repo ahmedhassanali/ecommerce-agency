@@ -11,31 +11,33 @@
         </div>
     </div>
 
-    <div class="my-0 container col-sm-12 d-flex ">
+    <div class="my-0 container  d-lg-flex ">
         {{-- Let’s talk. --}}
         <div class="m-5 col-lg-5">
             <h1>Let’s talk. </h1>
             <h5>If you have any questions about the subscription or are not sure which plan is right for you,
                 contact our team and let’s schedule a call.</h5>
 
-            <div class="mt-5 row col-lg-12">
-                <div class="col-lg-6 bg-primary text-white rounded pt-3 me-2">
+            <div class="my-5 row col-lg-12">
+                <div class="col-lg-6 bg-primary text-white rounded pt-3 me-2 mb-3">
                     <h4>Call us</h4>
                     <h5>1-335-670-6542</h5>
                 </div>
-                <div class="col-lg-5 bg-black text-white rounded pt-3">
+                <div class="col-lg-5 bg-black text-white rounded pt-3 mb-3">
                    <h4>Email us</h4>
                    <h5>hello@uxper.co</h5>
                 </div>
             </div>
+
             <div class="mt-5">
                 <h2>Address</h2>
                 <h5>2866 Oakway Lane, New York, USA</h5>
             </div>
+
         </div>
 
         {{-- Send us a message. --}}
-        <div class="m-5 col-lg-5">
+        <div class="m-5  col-lg-5">
             <h1>Send us a message.</h1>
             <h5>Feel free to contact us with questions, potential partnerships, or media inquiries.</h5>
             <div class="col-md-12 ">
