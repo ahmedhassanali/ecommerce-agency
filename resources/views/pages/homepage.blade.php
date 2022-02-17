@@ -12,9 +12,9 @@
         <div class="">
             <h1 class="display-4">We build amazing
                 <span class="text-primary"> eCommerce </span>  website for your business</h1>
-            <button class="btn btn-primary my-2">Contact Us</button>
+            <a class="btn btn-primary my-2 px-5"  href="{{route('ContactUs')}}">Contact Us</a>
         </div>
-        </div>
+    </div>
 </div>
 
 </section><!-- End Hero -->
@@ -25,30 +25,28 @@
 $ThingsWeDo = 3;
 @endphp
 <section id='ThingsWeDo' class="text-center text-sm-start justify-content-center py-5" >
-    <div class="container py-5">
-
-    <h1 class="display-4 my-5">Things We <span class="text-primary"> Do </span></h1>
-
-    <div class="d-flex justify-content-around flex-wrap">
-
-                @for ($i = 1; $i <= $ThingsWeDo; $i++)
-                <div  style="width:300px" >
-                    <img class="card-img-top w-50 align-self-center my-5" src="{{asset('images/'.$i.'.svg')}}" alt="Card image">
-                    <div class="card-body">
+    <div class="container py-5" data-aos="fade-up">
+        <h1 class="display-4 my-5">Things We <span class="text-primary"> Do </span></h1>
+        <div class="d-flex justify-content-around flex-wrap">
+            @for ($i = 1; $i <= $ThingsWeDo; $i++)
+            <div  style="width:300px" data-aos="zoom-in"  data-aos-duration="2000">
+                <img class="card-img-top w-50 align-self-center my-5" src="{{asset('images/'.$i.'.svg')}}" alt="Card image">
+                <div class="card-body">
                     <h4 class="card-title">Ongoing Support</h4>
                     <p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-                    </div>
                 </div>
-                @endfor
+            </div>
+            @endfor
         </div>
-
     </div>
 </section><!-- End Things We Do -->
+
+<div class="d-flex justify-content-center mb-5" style="height: 100px;"><div class="vr"></div> </div>
 
 <!-- =======  Section Our Happy Customers ======= -->
 
 <section id='OurHappyCustomers'>
-<div class="container py-5">
+<div class="container py-5" data-aos="fade-up">
     <h1 class="display-4 my-5">Our<span class="text-primary"> Happy </span>Customers</h1>
 
     <div class=" my-5">
@@ -102,16 +100,16 @@ $ThingsWeDo = 3;
     $whychooseUs = [['Satsifield Customers','1231'],['Successful Projects','546'],['Years of Experience','5']]
 @endphp
 
-<section  class="py-5 my-5" id="whychooseUs" >
-    <div class="container bg-black p-5 shadow  mb-5  rounded" style="margin-right: 0%" >
-        <h1 class="display-4 my-3 text-white">why Choose<span class="text-primary"> Us </span></h1>
-        <div class="d-sm-flex align-items-center flex-row-reverse py-4 ">
+<section  class="py-5 my-5 " id="whychooseUs" style="height: 800px;" >
+    <div   data-aos="fade-up"  class="ms-sm-0 ms-lg-5 me-0 p-5 shadow-5 hero-image  rounded bg-image "   style="background-color: #000000 ;height: 660px"  >
+        <h1 class=" display-4 my-3 mt-5 text-white ">why Choose<span class="text-primary"> Us </span></h1>
+        <div class="d-sm-flex align-items-center flex-row-reverse py-4 " >
             <img class="img-fluid w-25 d-sm-block d-none" src="{{asset('images/hero.svg')}}" alt="">
             <div>
-                <h4 class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h4>
-                <div class="d-flex justify-content-around flex-wrap py-5">
+                <h4 class="text-white pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h4>
+                <div class="d-flex justify-content-around flex-wrap py-5 ">
                     @foreach ($whychooseUs as $item)
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="2000">
                             <span class="counter display-3 text-primary d-block" data-toggle="counterUp">{{$item[1]}}</span>
                             <span class="h6 text-white">{{$item[0]}}</span>
                         </div>
@@ -122,18 +120,16 @@ $ThingsWeDo = 3;
     </div>
 </section><!-- End why choose Us -->
 
-
-
 <!-- =======  Section Our Partners ======= -->
 @php
 $numOfourPartners = 8;
 @endphp
-    <section  class="p-3" id="Our Partners" >
+    <section  class="p-3 my-5" id="OurPartners" >
     <div class="container ">
-        <h1 class="display-4 my-3">Our<span class="text-primary"> Partners </span></h1>
+        <h1 class="display-4 my-5">Our<span class="text-primary"> Partners </span></h1>
         <div class="d-flex justify-content-around  flex-wrap p-5">
             @for ($i = 1; $i <= 8; $i++)
-                <div style="width:250px" class="  ">
+                <div style="width:250px"  data-aos="fade-left" data-aos-duration="2000">
                     <img  class="img-fluid mb-5"  src="{{asset('images/ourPartners/'.$i.'.png')}}"  alt="">
                 </div>
             @endfor
@@ -141,6 +137,7 @@ $numOfourPartners = 8;
     </div>
 </section><!-- End Our Partners -->
 
+<div class="d-flex justify-content-center mx-5" style="height: 100px;"><div class="vr"></div> </div>
 
 
 <!-- =======  Section Selected Works ======= -->
@@ -150,20 +147,26 @@ $numOfSelectedWorks = 4;
 <section  class="p-3" id="Selected Works" >
 <div class="container ">
     <h1 class="display-4 my-3"><span class="text-primary"> Selected </span>Works</h1>
-    <h5>The balance in design is the most important thing.</h5>
+    <h5 >The balance in design is the most important thing.</h5>
     <div class="d-flex justify-content-around  flex-wrap py-3 ">
         @for ($i = 1; $i < $numOfSelectedWorks; $i++)
-            <div class="my-5 py-5">
-                <img class="img-fluid " src="{{asset('images/SelectedWorks/'.$i.'.png')}}"     alt="">
-                <h6 >1. Golo - Travel Booking Website</h6>
+            <div data-aos="fade-up"  data-aos-duration="2000" class="my-5 py-5">
+                <img class="img-fluid mb-2" src="{{asset('images/SelectedWorks/'.$i.'.png')}}"     alt="">
+                <h5 >1. Golo - Travel Booking Website</h5>
             </div>
-            <div>
+            <div data-aos="fade-up" >
                 @php $i++; @endphp
-                <img class="img-fluid " src="{{asset('images/SelectedWorks/'.$i .'.png')}}"     alt="">
-                <h6 >1. Golo - Travel Booking Website</h6>
+                <img class="img-fluid mb-2" src="{{asset('images/SelectedWorks/'.$i .'.png')}}"     alt="">
+                <h5  >1. Golo - Travel Booking Website</h5>
             </div>
         @endfor
+
     </div>
+    <div class="">
+        <button class="btn-cer mx-auto d-block bg-white " href="">More</button>
+    </div>
+    <div class="d-flex justify-content-center my-5" style="height: 100px;"><div class="vr"></div> </div>
+
 </div>
 </section><!-- End Selected Works -->
 @endsection

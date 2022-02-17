@@ -1,0 +1,24 @@
+
+*{
+    font-family: 'El Messiri', sans-serif;
+}
+
+.hero-image {
+
+    /* Set a specific height */
+    /* height: 100%; */
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .btn-cer {
+    display:block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 0, 0);
+  }
