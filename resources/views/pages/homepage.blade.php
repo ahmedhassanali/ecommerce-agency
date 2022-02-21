@@ -11,8 +11,9 @@
         <img class="img-fluid w-50 w-sm-100 " src="{{asset('images/hero.svg')}}" alt="">
         <div class="">
             <h1 class="display-4">We build amazing
-                <span class="text-primary"> eCommerce </span>  website for your business</h1>
-            <a class="btn btn-primary my-2 px-5"  href="{{route('ContactUs')}}">Contact Us</a>
+                <span class="text-primary">ECommerce</span>website for your business</h1>
+            <a class="btn btn-primary my-2 px-5"
+            href="{{route('ContactUs')}}">Contact Us</a>
         </div>
     </div>
 </div>
