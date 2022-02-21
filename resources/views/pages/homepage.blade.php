@@ -11,7 +11,8 @@
         <img class="img-fluid w-50 w-sm-100 " src="{{asset('images/hero.svg')}}" alt="">
         <div class="">
             <h1 class="display-4">We build amazing
-                <span class="text-primary">ECommerce</span>website for your business</h1>
+                <span class="text-primary">ECommerce</span>website for your business
+            </h1>
             <a class="btn btn-primary my-2 px-5"
             href="{{route('ContactUs')}}">Contact Us</a>
         </div>
@@ -161,9 +162,9 @@ $numOfSelectedWorks = 4;
                 <h5  >1. Golo - Travel Booking Website</h5>
             </div>
         @endfor
-
     </div>
-    <div class="">
+
+    <div>
         <button class="btn-cer mx-auto d-block bg-white " href="">More</button>
     </div>
     <div class="d-flex justify-content-center my-5" style="height: 100px;"><div class="vr"></div> </div>
