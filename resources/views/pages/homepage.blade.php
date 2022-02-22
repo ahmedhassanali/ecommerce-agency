@@ -102,16 +102,16 @@ $ThingsWeDo = 3;
     $whychooseUs = [['Satsifield Customers','1231'],['Successful Projects','546'],['Years of Experience','5']]
 @endphp
 
-<section  class="py-5 my-5 " id="whychooseUs" style="height: 800px;" >
+<section  class="py-5 my-5 " id="whychooseUs" >
     <div   data-aos="fade-up"  class="ms-sm-0 ms-lg-5 me-0 p-5 shadow-5 hero-image  rounded bg-image "   style="background-color: #000000 ;height: 660px"  >
-        <h1 class=" display-4 my-3 mt-5 text-white ">why Choose<span class="text-primary"> Us </span></h1>
+        <h1 class=" display-4 my-3 mt-md-5 text-white ">why Choose<span class="text-primary"> Us </span></h1>
         <div class="d-sm-flex align-items-center flex-row-reverse py-4 " >
             <img class="img-fluid w-25 d-sm-block d-none" src="{{asset('images/hero.svg')}}" alt="">
             <div>
                 <h4 class="text-white pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h4>
-                <div class="d-flex justify-content-around flex-wrap py-5 ">
+                <div class=" py-lg-5 row ">
                     @foreach ($whychooseUs as $item)
-                        <div data-aos="fade-up" data-aos-duration="2000">
+                        <div class="mb-5 col-lg-4 col-12" data-aos="fade-up" data-aos-duration="2000">
                             <span class="counter display-3 text-primary d-block" data-toggle="counterUp">{{$item[1]}}</span>
                             <span class="h6 text-white">{{$item[0]}}</span>
                         </div>
@@ -128,11 +128,11 @@ $numOfourPartners = 8;
 @endphp
     <section  class="p-3 my-5" id="OurPartners" >
     <div class="container ">
-        <h1 class="display-4 my-5">Our<span class="text-primary"> Partners </span></h1>
-        <div class="d-flex justify-content-around  flex-wrap p-5">
+        <h1 class="display-4 my-5 ">Our<span class="text-primary"> Partners </span></h1>
+        <div class="row mx-3 col-12">
             @for ($i = 1; $i <= 8; $i++)
-                <div style="width:250px"  data-aos="fade-left" data-aos-duration="2000">
-                    <img  class="img-fluid mb-5"  src="{{asset('images/ourPartners/'.$i.'.png')}}"  alt="">
+                <div  class='col-lg-3 col-6'  data-aos="fade-left" data-aos-duration="2000">
+                    <img  class="img-fluid mb-5 mx-0"  src="{{asset('images/ourPartners/'.$i.'.png')}}"  alt="">
                 </div>
             @endfor
         </div>
